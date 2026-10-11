@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عين الإمارات | كتالوج تلبيس العماير وترميم الواجهات الخارجية</title>
+    
+    <!-- Meta tags for social and SEO -->
+    <meta name="description" content="كتالوج شركة عين الإمارات المتخصصة في تلبيس واجهات العماير بالكلادينج والحجر والزجاج وترميم التلبيس القديم مع نظام ضغط متقدم للصور.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+    <link rel="apple-touch-icon" href="assets/logo.jpg">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         Site Header / Navbar
+         ====================================================================== -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-wrapper" id="nav-brand">
+                <img src="assets/logo.jpg" alt="شعار عين الإمارات" class="brand-logo-img">
+                <div class="brand-text">
+                    <h1>عين الإمارات <span>Ain Al Emarat Facades</span></h1>
+                </div>
+            </div>
+
+            <nav class="header-actions">
+                <a href="https://wa.me/966583100076?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D9%8A%D9%86%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%AA%D9%84%D8%A8%D9%8A%D8%B3%20%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA" target="_blank" rel="noopener" class="header-whatsapp-btn" title="تواصل واتساب مباشر: 0583100076">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span class="header-whatsapp-label">واتساب: 0583100076</span>
+                </a>
+                <span class="status-indicator" title="حالة الاتصال بالسحابة">
+                    <span class="status-dot"></span>
+                    <span>سحابة Supabase</span>
+                </span>
+                <a class="nav-link active" id="nav-catalog">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>كتالوج الواجهات</span>
+                </a>
+                <button class="admin-login-btn" id="nav-admin-btn">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>لوحة الإدارة</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         VIEW 1: Public Catalog (الواجهة العامة)
+         ====================================================================== -->
+    <main id="catalog-view">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-pattern"></div>
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>المتخصصون في تلبيس وترميم واجهات العماير الخارجية</span>
+                </div>
+                <h2 class="hero-title">
+                    كتالوج مشاريع <span>عين الإمارات</span> لتلبيس وترميم الواجهات
+                </h2>
+                <p class="hero-subtitle">
+                    استعراض توثيقي شامل لأعمال تلبيس واجهات العماير والمباني بالكلادينج والحجر الطبيعي والزجاج، وترميم وصيانة التلبيس القديم ومعالجة التشققات الخارجية بأعلى معايير الجودة والأمان.
+                </p>
+
+                <!-- Search & Filters -->
+                <div class="search-filter-card">
+                    <div class="search-input-group">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-input" placeholder="ابحث باسم العمارة، الحي، المدينة، أو نوع التلبيس (كلادينج، حجر، ترميم، زجاج)...">
+                    </div>
+                    <div class="filter-pills">
+                        <button class="filter-pill active" data-category="الكل">جميع الواجهات</button>
+                        <button class="filter-pill" data-category="كلادينج">كلادينج ألمنيوم</button>
+                        <button class="filter-pill" data-category="حجر">حجر طبيعي وميكانيكي</button>
+                        <button class="filter-pill" data-category="ترميم">ترميم وتجديد التلبيس</button>
+                        <button class="filter-pill" data-category="زجاج">واجهات زجاج واستركشر</button>
+                        <button class="filter-pill" data-category="بروفايل">بروفايل وديكور خارجي</button>
+                    </div>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-projects-count">0</div>
+                        <div class="stat-label">عمارة تم تلبيسها وترميمها</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-images-count">0</div>
+                        <div class="stat-label">صورة تفصيلية للواجهات الخارجية</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-cities-count">0</div>
+                        <div class="stat-label">مدن ومناطق مغطاة للأعمال</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="catalog-section">
+            <div class="catalog-header">
+                <div>
+                    <h3 class="section-title">سجل واجهات العماير المنجزة</h3>
+                    <p class="section-subtitle">تصفح صور ومراحل تلبيس وترميم واجهات العماير والمباني التجارية والسكنية</p>
+                </div>
+            </div>
+
+            <!-- Dynamic Project Cards -->
+            <div class="projects-grid" id="projects-grid">
+                <!-- Rendered dynamically by app.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================================================================
+         VIEW 2: Admin Login (تسجيل دخول لوحة الإدارة)
+         ====================================================================== -->
+    <div id="admin-login-view" class="admin-view-container">
+        <div class="admin-login-wrapper">
+            <img src="assets/logo.jpg" alt="عين الإمارات" class="login-brand-logo">
+            <h2 class="login-title">تسجيل دخول الإدارة</h2>
+            <p class="login-subtitle">بوابة خاصة بإدارة كتالوج واجهات عين الإمارات ورفع صور المشاريع</p>
+
+            <form id="admin-login-form" style="margin-top: 24px;">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">البريد الإلكتروني</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="أدخل البريد الإلكتروني" autocomplete="username" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="login-password">كلمة المرور</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="أدخل كلمة المرور" autocomplete="current-password" required>
+                </div>
+                <button type="submit" class="btn-primary" style="margin-top: 10px;">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span>دخول للوحة التحكم</span>
+                </button>
+            </form>
+
+            <div style="margin-top: 24px;">
+                <a href="#catalog" class="nav-link" style="color: var(--text-muted); display: inline-flex; justify-content: center;">
+                    <i class="fa-solid fa-arrow-left"></i> العودة للكتالوج العام
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         VIEW 3: Admin Dashboard (لوحة تحكم المقاول)
+         ====================================================================== -->
+    <div id="admin-dashboard-view" class="admin-view-container">
+        <!-- Dashboard Top Bar -->
+        <div class="admin-dashboard-bar">
+            <div class="admin-info-badge">
+                <div class="admin-avatar">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="admin-details">
+                    <h3>لوحة إدارة كتالوج عين الإمارات</h3>
+                    <span id="admin-user-display">جلسة الإدارة المعتمدة</span>
+                </div>
+            </div>
+            <div class="admin-bar-actions">
+                <button class="btn-outline-light" id="admin-return-btn">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>معاينة الكتالوج العام</span>
+                </button>
+                <button class="btn-logout" id="admin-logout-btn">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span>تسجيل الخروج</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cloud Status & Setup Notice Banner -->
+        <div id="cloud-status-banner" style="margin-bottom: 24px; padding: 18px 20px; border-radius: 14px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; background: #fffbeb; border: 1.5px solid #fde68a; transition: all 0.3s ease;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <div id="cloud-status-icon" style="width: 44px; height: 44px; border-radius: 50%; background: #f59e0b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <div>
+                    <h4 id="cloud-status-title" style="font-size: 15px; font-weight: 800; color: #92400e; margin-bottom: 2px;">جاري فحص الاتصال بسحابة Supabase...</h4>
+                    <p id="cloud-status-desc" style="font-size: 12px; color: #b45309; margin: 0;">يتم التحقق من جاهزية قاعدة البيانات وحاوية التخزين السحابي project-images.</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <button type="button" id="btn-copy-sql" class="btn-primary" style="width: auto; padding: 8px 16px; font-size: 13px; background: #d97706;">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>نسخ كود الـ SQL لتفعيل السحابة</span>
+                </button>
+                <button type="button" id="btn-recheck-cloud" class="btn-outline-light" style="color: #92400e; border-color: #d97706; padding: 8px 14px; font-size: 13px;">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>إعادة فحص السحابة</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Admin Navigation Tabs -->
+        <div class="admin-tabs">
+            <button class="admin-tab active" data-tab="add">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>إضافة عمارة / واجهة جديدة</span>
+            </button>
+            <button class="admin-tab" data-tab="manage">
+                <i class="fa-solid fa-bars-progress"></i>
+                <span>إدارة الواجهات الحالية</span>
+            </button>
+        </div>
+
+        <!-- TAB 1: Add New Project -->
+        <div id="tab-add" class="tab-content active">
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">إضافة مشروع تلبيس أو ترميم عمارة للكتالوج</h3>
+                    <p class="admin-card-desc">أدخل تفاصيل العمارة ونوع التلبيس الخارجي وارفع الصور. يقوم المتصفح بضغط كافة الصور تلقائياً إلى ~350KB قبل الرفع لتوفير المساحة وسرعة التصفح للعملاء.</p>
+                </div>
+
+                <form id="add-project-form">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label class="form-label" for="new-building-name">اسم العمارة أو المبنى *</label>
+                            <input type="text" id="new-building-name" class="form-control" placeholder="مثال: عمارة البرج التجاري" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="new-district">الموقع (الشارع / الحي / المدينة) *</label>
+                            <input type="text" id="new-district" class="form-control" placeholder="مثال: شارع الملك فهد - الرياض" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="new-work-type">نوع العمل المنفذ بالواجهة *</label>
+                        <input type="text" id="new-work-type" class="form-control" placeholder="مثال: تلبيس كلادينج ألمنيوم، ترميم وتجديد تلبيس قديم، تلبيس حجر طبيعي ميكانيكي، واجهات زجاجية..." required>
+                    </div>
+
+                    <!-- Main Image Dropzone -->
+                    <div class="form-group">
+                        <label class="form-label">الصورة الرئيسية البارزة للعمارة * (تظهر في كارت الكتالوج)</label>
+                        <div class="upload-dropzone" id="main-image-dropzone">
+                            <div class="dropzone-icon">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <h4 class="dropzone-title">اسحب وأفلت الصورة الرئيسية هنا، أو انقر للاختيار</h4>
+                            <p class="dropzone-note">يدعم JPG و PNG و WebP (يتم ضغطها تلقائياً لتستقر بحدود 350KB بدقة عالية)</p>
+                            <input type="file" id="main-image-input" accept="image/*" style="display: none;">
+                            <div id="main-image-preview"></div>
+                            <div id="main-compression-badge" class="compression-badge-tag" style="display: none;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Images Dropzone -->
+                    <div class="form-group" style="margin-top: 24px;">
+                        <label class="form-label">الصور الفرعية لمعرض الواجهة (حتى 30 صورة دفعة واحدة)</label>
+                        <div class="upload-dropzone" id="gallery-dropzone">
+                            <div class="dropzone-icon" style="color: var(--primary);">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <h4 class="dropzone-title">اختر صور مراحل التلبيس والترميم دفعة واحدة</h4>
+                            <p class="dropzone-note">يتم فحص وضغط كافة الصور في المتصفح تلقائياً قبل حفظها</p>
+                            <input type="file" id="gallery-images-input" accept="image/*" multiple style="display: none;">
+                            <div class="preview-grid" id="gallery-previews-grid"></div>
+                        </div>
+                    </div>
+
+                    <!-- Upload Progress -->
+                    <div class="progress-container" id="upload-progress-bar">
+                        <div class="progress-header">
+                            <span id="upload-progress-status">جاري المعالجة...</span>
+                            <span id="upload-progress-percent">0%</span>
+                        </div>
+                        <div class="progress-bar-track">
+                            <div class="progress-bar-fill" id="upload-progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <button type="submit" class="btn-primary" id="btn-save-project">
+                            <i class="fa-solid fa-plus-circle"></i>
+                            <span>حفظ ونشر العمارة في الكتالوج</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- TAB 2: Manage Existing Projects -->
+        <div id="tab-manage" class="tab-content">
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">إدارة واجهات العماير الحالية</h3>
+                    <p class="admin-card-desc">تعديل بيانات العماير، حذف المشروعات مع صورها التابعة (CASCADE)، أو إدارة معرض صور كل عمارة.</p>
+                </div>
+
+                <div class="projects-table-wrapper">
+                    <table class="projects-table">
+                        <thead>
+                            <tr>
+                                <th>اسم العمارة</th>
+                                <th>الموقع / الحي</th>
+                                <th>نوع التلبيس / العمل</th>
+                                <th>عدد الصور</th>
+                                <th>تاريخ الإضافة</th>
+                                <th>الإجراءات</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-projects-table-body">
+                            <!-- Rendered by app.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         VIEW 4: Manage Gallery Sub-View (إدارة معرض صور عمارة محددة)
+         ====================================================================== -->
+    <div id="gallery-manage-view" class="admin-view-container">
+        <div class="admin-card">
+            <div class="admin-card-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <h3 class="admin-card-title" id="manage-gallery-project-title">معرض صور الواجهة</h3>
+                    <p class="admin-card-desc">يمكنك حذف صور فردية بنقرة واحدة، أو رفع صور إضافية جديدة لمراحل العمل دون التأثير على الصور الحالية.</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button type="button" class="btn-primary" id="btn-add-more-gallery" style="width: auto; padding: 9px 18px; font-size: 13px;">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>إضافة صور جديدة للمعرض</span>
+                    </button>
+                    <input type="file" id="add-more-gallery-input" accept="image/*" multiple style="display: none;">
+                    <button type="button" class="btn-outline-light" id="back-to-projects-btn" style="color: var(--primary); border-color: var(--border);">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>العودة لقائمة العماير</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Photos Grid -->
+            <div class="gallery-manage-grid" id="manage-gallery-grid">
+                <!-- Rendered dynamically by app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         MODAL 1: Fullscreen Gallery Lightbox (عرض الصور كاملة للعميل)
+         ====================================================================== -->
+    <div class="modal-overlay" id="gallery-modal">
+        <div class="gallery-modal-card">
+            <!-- Modal Header -->
+            <div class="gallery-modal-header">
+                <div>
+                    <h3 class="gallery-modal-title" id="gallery-modal-title">اسم العمارة</h3>
+                    <div class="gallery-modal-sub" id="gallery-modal-sub">
+                        <span>الموقع</span> • <span>نوع التلبيس</span>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="gallery-modal-close" title="إغلاق النافذة (Esc)">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Main Viewport -->
+            <div class="gallery-viewport">
+                <button class="gallery-nav-btn gallery-prev" id="gallery-prev-btn" title="الصورة السابقة (سهم يمين)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                
+                <img src="" id="gallery-main-img" class="gallery-main-image" alt="معاينة واجهة العمارة">
+
+                <button class="gallery-nav-btn gallery-next" id="gallery-next-btn" title="الصورة التالية (سهم يسار)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="gallery-counter-tag" id="gallery-counter-tag">صورة 1 من 1</div>
+            </div>
+
+            <!-- Thumbnails Strip -->
+            <div class="gallery-strip-container">
+                <div class="gallery-thumbnails-strip" id="gallery-thumb-strip">
+                    <!-- Thumbnails generated by app.js -->
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="gallery-modal-footer">
+                <div>
+                    <span style="font-size: 13px; color: #cbd5e1;">معرض التلبيس والترميم الخارجي (~350KB مضغوط بدقة عالية)</span>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <a href="https://wa.me/966583100076" target="_blank" rel="noopener" class="share-whatsapp-btn" id="gallery-whatsapp-btn" title="تواصل واتساب مع عين الإمارات: 0583100076">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i>
+                        <span>طلب تسعير لتلبيس / ترميم واجهتي (0583100076)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         MODAL 2: Edit Project Modal (تعديل بيانات العمارة)
+         ====================================================================== -->
+    <div class="modal-overlay" id="edit-project-modal">
+        <div class="edit-modal-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h3 style="font-size: 18px; font-weight: 800; color: var(--primary);">تعديل بيانات العمارة والواجهة</h3>
+                <button class="modal-close-btn" id="edit-modal-close" style="color: var(--text-main); background: var(--surface-alt);">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="edit-project-form">
+                <input type="hidden" id="edit-project-id">
+                <div class="form-group">
+                    <label class="form-label" for="edit-building-name">اسم العمارة / المبنى</label>
+                    <input type="text" id="edit-building-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="edit-district">الموقع (الشارع / الحي / المدينة)</label>
+                    <input type="text" id="edit-district" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="edit-work-type">نوع التلبيس أو الترميم المنفذ</label>
+                    <input type="text" id="edit-work-type" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="edit-main-image-input">تغيير الصورة الرئيسية (اختياري)</label>
+                    <input type="file" id="edit-main-image-input" accept="image/*" class="form-control">
+                </div>
+                <div style="margin-top: 24px; display: flex; gap: 12px;">
+                    <button type="submit" class="btn-primary" style="flex: 1;">
+                        <i class="fa-solid fa-check"></i>
+                        <span>حفظ التعديلات</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         MODAL 3: Supabase SQL Setup Modal (كود تفعيل السحابة)
+         ====================================================================== -->
+    <div class="modal-overlay" id="sql-setup-modal">
+        <div class="edit-modal-card" style="max-width: 720px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-database" style="color: var(--accent); font-size: 22px;"></i>
+                    <h3 style="font-size: 18px; font-weight: 800; color: var(--primary);">كود تفعيل سحابة Supabase (SQL Script)</h3>
+                </div>
+                <button class="modal-close-btn" id="sql-modal-close" style="color: var(--text-main); background: var(--surface-alt);">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.6;">
+                انسخ هذا الكود بالكامل، وافتحه في <a href="https://supabase.com/dashboard/project/iwdahilyckhjwxsqdgku/sql" target="_blank" style="color: var(--accent); font-weight: 700; text-decoration: underline;">Supabase SQL Editor</a> ثم اضغط <strong>Run</strong>. سيقوم فوراً بتفعيل التخزين السحابي للصور وحفظ المشاريع في السحابة.
+            </p>
+            <div style="position: relative;">
+                <textarea id="sql-code-textarea" readonly style="width: 100%; height: 250px; font-family: monospace; font-size: 12px; direction: ltr; text-align: left; background: #0f172a; color: #38bdf8; border: 1px solid var(--border); border-radius: 10px; padding: 14px; resize: none;"></textarea>
+            </div>
+            <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
+                <button type="button" class="btn-primary" id="btn-modal-copy-sql" style="flex: 1; min-width: 200px;">
+                    <i class="fa-solid fa-copy"></i>
+                    <span>نسخ الكود بالكامل إلى الحافظة</span>
+                </button>
+                <a href="https://supabase.com/dashboard/project/iwdahilyckhjwxsqdgku/sql" target="_blank" class="btn-outline-light" style="color: var(--primary); border-color: var(--border); text-decoration: none; padding: 12px 18px; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>فتح Supabase SQL Editor</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- ======================================================================
+         Site Footer
+         ====================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <span class="footer-brand">عين الإمارات (Ain Al Emarat)</span> — ريادة هندسية في تلبيس واجهات العماير وترميم وصيانة التلبيس الخارجي.
+            </div>
+            <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                <a href="https://wa.me/966583100076" target="_blank" rel="noopener" class="footer-link" style="color: #25d366; font-weight: 700;">
+                    <i class="fa-brands fa-whatsapp"></i> واتساب: 0583100076
+                </a>
+                <a href="#admin" class="footer-link" id="nav-admin-link">
+                    <i class="fa-solid fa-lock"></i> لوحة الإدارة
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/966583100076?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B9%D9%8A%D9%86%20%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D9%84%D8%A8%D9%8A%D8%B3%20%D9%88%D8%AA%D8%B1%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA" target="_blank" rel="noopener" class="floating-whatsapp-btn" title="تواصل مباشرة عبر واتساب: 0583100076">
+        <i class="fa-brands fa-whatsapp floating-whatsapp-icon"></i>
+        <span class="floating-whatsapp-text">تواصل واتساب: 0583100076</span>
+    </a>
+
+    <!-- Scripts (Loaded in dependency order, fully compatible with file:/// double click) -->
+    <!-- 1. Supabase JS SDK v2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- 2. Mock Initial Projects Data -->
+    <script src="js/mock-data.js"></script>
+    
+    <!-- 3. Canvas Client-Side Image Compressor -->
+    <script src="js/compressor.js"></script>
+    
+    <!-- 4. Supabase Client & Resilient Sync Layer -->
+    <script src="js/supabase-client.js"></script>
+    
+    <!-- 5. Main App Controller -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
